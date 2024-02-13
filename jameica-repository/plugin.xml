@@ -1,12 +1,12 @@
-<plugin xmlns="http://www.willuhn.de/schema/jameica-plugin"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.willuhn.de/schema/jameica-plugin http://www.willuhn.de/schema/jameica-plugin-1.2.xsd"
-        name="jverein" version="2.8.20" class="de.jost_net.JVerein.JVereinPlugin">
+<plugin xmlns="https://www.willuhn.de/schema/jameica-plugin"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.willuhn.de/schema/jameica-plugin https://www.willuhn.de/schema/jameica-plugin-1.5.xsd"
+        name="jverein" version="2.8.21" class="de.jost_net.JVerein.JVereinPlugin">
 
   <description>OpenSource-Vereinsverwaltung</description>
-  <url>https://openjverein.github.io/jameica-repository/jverein.2.8.20.zip</url>
+  <url>https://openjverein.github.io/jameica-repository/jverein.2.8.21.zip</url>
   <homepage>https://openjverein.github.io/</homepage>
-  <license>GPL - http://www.gnu.org/copyleft/gpl.html</license>
+  <license>GPL - https://www.gnu.org/copyleft/gpl.html</license>
   <icon>jverein-icon-64x64.png</icon>
   <menu>
     <item name="JVerein" >
