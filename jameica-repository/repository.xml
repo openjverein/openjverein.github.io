@@ -4,8 +4,12 @@
   xsi:noNamespaceSchemaLocation="https://www.willuhn.de/schema/jameica-repository-1.0.xsd"
   name="OpenJVerein Repository">
 
-  <plugins name="OpenJVerein">
-     <plugin url="https://openjverein.github.io/jameica-repository"/>
-     <plugin url="https://openjverein.github.io/jameica-repository/previous"/>
+  <plugins name="OpenJVerein 3">
+     <plugin url="https://openjverein.github.io/jameica-repository/latest"/>
+     <plugin url="https://openjverein.github.io/jameica-repository/3.0"/>
+  </plugins>
+
+  <plugins name="OpenJVerein 2 (Legacy)">
+     <plugin url="https://openjverein.github.io/jameica-repository/2.8"/>
   </plugins>
 </repository>
