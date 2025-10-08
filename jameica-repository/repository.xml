@@ -7,6 +7,7 @@
   <plugins name="OpenJVerein 3">
      <plugin url="https://openjverein.github.io/jameica-repository/latest"/>
      <plugin url="https://openjverein.github.io/jameica-repository/3.0"/>
+    <plugin url="https://openjverein.github.io/jameica-repository/3.1"/>
   </plugins>
 
   <plugins name="OpenJVerein 2 (Legacy)">
