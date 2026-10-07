@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="OpenJVerein ist eine kostenlose Open-Source-Vereinsverwaltung für Mitgliederverwaltung, Beitragsabrechnung und Buchhaltung. Für Windows, Linux und macOS.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .screenshot-link {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .screenshot-link:hover {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .screenshot-card {
+          background: #fff;
+          border: 1px solid #dee2e6;
+          border-radius: 6px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+          transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .screenshot-link:hover .screenshot-card {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 22px rgba(0, 0, 0, .14);
+        }
+
+        .screenshot-card img {
+          display: block;
+          width: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>OpenJVerein – Kostenlose Open-Source-Vereinsverwaltung</title>
+  </head>
+  <body>
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <img src="images/JVereinT.png" alt="OpenJVerein" class="img-fluid mb-3" style="max-width: 500px;">
+          <h1>Die freie Vereinsverwaltung für Vereine jeder Größe.</h1>
+          <p>Mitglieder verwalten, Beiträge abrechnen, Buchhaltung erledigen und Dokumente erstellen – kostenlos und Open Source.</p>
+          <p>OpenJVerein ist eine umfangreiche Vereinsverwaltung mit Anbindung an die ebenfalls quelloffene Homebanking-Software <a href="https://www.willuhn.de/products/hibiscus/" target="_blank" rel="noopener">Hibiscus</a>.</p>
+          <p>✓ Kostenlos · ✓ Open Source · ✓ Windows / Linux / macOS · ✓ Keine Cloud erforderlich</p>
+          <div class="row">
+            <div class="col-md-3 mb-2">
+              <a class="btn btn-primary btn-block" href="https://openjverein.gitbook.io/doku/" role="button"><i class="fas fa-book"></i> Dokumentation</a>
+            </div>
+            <div class="col-md-3 mb-2">
+              <a class="btn btn-primary btn-block" href="https://jverein-forum.de/" role="button"><i class="fas fa-user-tie"></i> Forum</a>
+            </div>
+            <div class="col-md-3 mb-2">
+              <a class="btn btn-primary btn-block" href="https://github.com/openjverein/jverein/releases" role="button"><i class="fas fa-download"></i> Download</a>
+            </div>
+            <div class="col-md-3 mb-2">
+              <a class="btn btn-primary btn-block" href="https://openjverein.gitbook.io/doku/allgemein/installation" role="button"><i class="fas fa-tools"></i> Installation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          
+            <div class="row text-center my-5">
+              <div class="col-md-3 mb-4">
+                <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                <h4>Mitgliederverwaltung</h4>
+                <p>Mitglieder, Spendenbescheinigungen, Arbeitseinsätze, Lehrgänge und vieles mehr.</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fas fa-euro-sign fa-3x mb-3 text-primary"></i>
+                <h4>Abrechnung</h4>
+                <p>Beiträge, Lastschriften und Rechnungen.</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fas fa-calculator fa-3x mb-3 text-primary"></i>
+                <h4>Buchhaltung</h4>
+                <p>Buchungen, EÜR, Anlagen, Projekte, Umsatzsteuer und Wirtschaftsplanung.</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fas fa-unlock fa-3x mb-3 text-primary"></i>
+                <h4>Open Source</h4>
+                <p>Kostenlos, transparent und flexibel einsetzbar.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2 class="text-center mb-2">OpenJVerein in Aktion</h2>
+            <p class="text-center text-muted mb-4">
+              Ein Einblick in die wichtigsten Bereiche von OpenJVerein.
+            </p>
+
+            <div class="row">
+              
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/MitgliedListeView.png" data-title="Mitglieder" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/MitgliedListeView.png" alt="OpenJVerein Mitglieder" class="img-fluid" >
+                  </div>
+                  <h5 class="mt-3 mb-1">Mitglieder</h5>
+                </a>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/BuchungenListeView.png" data-title="Buchungen" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/BuchungenListeView.png" alt="OpenJVerein Buchungen" class="img-fluid" >
+                  </div>
+                  <h5 class="mt-3 mb-1">Buchungen</h5>
+                </a>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/AbrechnungDialog.png" data-title="Abrechnung" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/AbrechnungDialog.png" alt="OpenJVerein Abrechnung" class="img-fluid" >
+                  </div>
+                  <h5 class="mt-3 mb-1">Abrechnung</h5>
+                </a>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/Mail.png" data-title="Mail" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/Mail.png" alt="OpenJVerein Mail" class="img-fluid">
+                  </div>
+                  <h5 class="mt-3 mb-1">Mail</h5>
+                </a>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/BuchungsklassenSaldoView.png" data-title="Buchungsklassen-Saldo" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/BuchungsklassenSaldoView.png" alt="OpenJVerein Buchungsklassen-Saldo" class="img-fluid" >
+                  </div>
+                  <h5 class="mt-3 mb-1">Buchungsklassen-Saldo</h5>
+                </a>
+              </div>
+              
+              <div class="col-md-4 mb-4">
+                <a href="#" data-toggle="modal" data-target="#screenshotModal" data-image="images/WirtschaftsplanDetailView.png" data-title="Wirtschaftsplan" class="d-block screenshot-link">
+                  <div class="screenshot-card">
+                    <img src="images/WirtschaftsplanDetailView.png" alt="OpenJVerein Wirtschaftsplan" class="img-fluid">
+                  </div>
+                  <h5 class="mt-3 mb-1">Wirtschaftsplan</h5>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal fade" id="screenshotModal" tabindex="-1" role="dialog" aria-labelledby="screenshotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="screenshotModalLabel"></h5>
+
+              <button type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Schließen">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body p-0 position-relative">
+
+              <button type="button"
+                      id="screenshotPrev"
+                      class="btn btn-dark position-absolute"
+                      style="left: 10px; top: 50%; transform: translateY(-50%); z-index: 10;"
+                      aria-label="Vorheriges Bild">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+
+              <img id="screenshotModalImage"
+                   src=""
+                   alt=""
+                   class="img-fluid w-100">
+
+              <button type="button"
+                      id="screenshotNext"
+                      class="btn btn-dark position-absolute"
+                      style="right: 10px; top: 50%; transform: translateY(-50%); z-index: 10;"
+                      aria-label="Nächstes Bild">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2>News</h2>
+
+            <div class="card my-3">
+              <div class="card-body">
+                <h4 class="card-title">Version 4.3.0 veröffentlicht – 06.10.2026</h4>
+
+                <h5>Neue Features</h5>
+                <ul>
+                  <li>Allgemeiner Export bei Tabellen erweitert</li>
+                  <li>Exportprofile</li>
+                  <li>Konfigurierbarkeit von PDF-Reports</li>
+                  <li>Konfigurierbare Rechnungsnummer</li>
+                  <li>Buchungsreport</li>
+                  <li>Tastaturkürzel (Shortcuts)</li>
+                  <li>Filterprofile</li>
+                  <li>HTML-Unterstützung in Formularfeldern</li>
+                </ul>
+
+                <a href="https://openjverein.gitbook.io/doku/v/4.3/notes" class="btn btn-light mb-2">Weitere Infos zu den Änderungen in der Doku</a>
+                <a href="https://github.com/openjverein/jverein/releases/tag/4.3.0" class="btn btn-light mb-2">Alle Änderungen in 4.3.0</a>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Installation</h5>
+                    <ol>
+                      <li>Starte Jameica und öffne "Datei»Einstellungen»Plugins".</li>
+                      <li>Klicke auf den Reiter "Verfügbare Plugins" und wähle das Repository <code>https://openjverein.github.io/jameica-repository</code> aus.</li>
+                      <li>Klicke bei OpenJVerein "Version 4.3.0" auf Installieren.</li>
+                      <li>Starte Jameica neu.</li>
+                    </ol>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5>Update</h5>
+                    <ol>
+                      <li>Starte Jameica.</li>
+                      <li>Öffne "Datei»Einstellungen»Plugins»Updates" und installiere die verfügbaren Updates.</li>
+                      <li>Starte Jameica neu.</li>
+                    </ol>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+<div class="card my-3">
+              <div class="card-body">
+                <h4 class="card-title">Features</h4>
+                <p>OpenJVerein beinhaltet folgende Features:</p>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">
+                      <i class="fas fa-users text-primary mr-2"></i>
+                      Mitgliederverwaltung
+                    </h5>
+                    <ul>
+                      <li>Abbildung von Familienverbänden (Familienbeitrag, Ermäßigung für Angehörige)</li>
+                      <li>Zuweisung individueller Eigenschaften und Zusatzfelder</li>
+                      <li>Verwaltung von Wiedervorlagen</li>
+                      <li>Verwaltung von Teilnahmen an Lehrgängen</li>
+                      <li>Verwaltung und Abrechnung von Arbeitseinsätzen (Pflichtstunden)</li>
+                      <li>Versand von E-Mails</li>
+                      <li>Individuell programmierbare Lesefelder für Mails und Dokumente</li>
+                      <li>Zuordnung von Dokumenten</li>
+                      <li>Verwaltung von Nicht-Mitgliedern (Spender, Lieferanten, Kunden, Interessenten etc.)</li>
+                      <li>Erstellung von Spendenbescheinigungen</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">
+                      <i class="fas fa-euro-sign text-primary mr-2"></i>
+                      Abrechnung
+                    </h5>
+                    <ul>
+                      <li>Abrechnung der Mitgliedsbeiträge mit verschiedenen Beitragsmodellen</li>
+                      <li>Erstellung von Lastschriften, Abbuchung über Hibiscus oder Ausgabe als XML-Datei</li>
+                      <li>Verschiedene Beitragsgruppen</li>
+                      <li>Sekundäre Beitragsgruppen</li>
+                      <li>Nach Alter gestaffelte Beitragsgruppen</li>
+                      <li>Verwaltung zukünftiger Beitragsgruppen (z.B. Ermäßigung im 1. Jahr)</li>
+                      <li>Abweichender Zahler</li>
+                      <li>Zusatzbeträge einmalig und wiederkehrend (Kursgebühren, Gerätemiete, Verkauf etc.)</li>
+                      <li>Erstellung und Versand von E-Rechnungen im ZUGFeRD-Format</li>
+                      <li>Erstellung und Abrechnung von Gutschriften und Forderungen</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">
+                      <i class="fas fa-calculator text-primary mr-2"></i>
+                      Buchhaltung
+                    </h5>
+                    <ul>
+                      <li>Individuelle Kontenrahmen. SKR42 und SKR49 stehen zum Download bereit</li>
+                      <li>Import von Buchungen aus Hibiscus</li>
+                      <li>Anlagenbuchhaltung mit automatischer oder manueller Abschreibung</li>
+                      <li>Buchungsklassensaldo zur Übernahme in die EÜR</li>
+                      <li>Individuelle Steuersätze</li>
+                      <li>Automatische Berechnung der Steuer</li>
+                      <li>Umsatzsteuer-Voranmeldung</li>
+                      <li>Verwaltung und Auswertung von Projekten</li>
+                      <li>Mittelverwendungsreport</li>
+                      <li>Wirtschaftsplanung</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <h5 class="mb-3">
+                      <i class="fas fa-file-export text-primary mr-2"></i>
+                      Ausgabe, Import & Export
+                    </h5>
+                    <ul>
+                      <li>Alle Listen können als PDF oder CSV ausgegeben werden</li>
+                      <li>PDF-Ausgabe mit umfangreichen Einstellungsmöglichkeiten (Schrift, Farbe, Briefpapier)</li>
+                      <li>Import von Mitgliedern, Buchungen, Zusatzbeträgen</li>
+                      <li>Import von Änderungen an Mitgliedsdaten</li>
+                      <li>Verschiedene Exporte der Buchführung: Salden, Journal, Buchungsliste</li>
+                      <li>Diverse Mitgliedsexporte und Auswertungen: Adressliste, Jubiläen, Altersstatistik etc.</li>
+                      <li>Adressbuchexport vCard</li>
+                      <li>
+                        Versand und Druck von Dokumenten, Dokumente können benutzerdefiniert mit Text oder HTML gestaltet werden
+                        <ul>
+                          <li>Rechnungen</li>
+                          <li>Spendenbescheinigungen</li>
+                          <li>Kontoauszug von Mitgliedern</li>
+                          <li>Personalbogen</li>
+                          <li>Freie Dokumente</li>
+                          <li>Pre-Notifications</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <h2>Datenbank</h2>
+            <p>
+              Als Datenbank kommt standardmäßig die Open-Source-Datenbank
+              <a href="https://www.h2database.com/" target="_blank" rel="noopener">H2</a>
+              zum Einsatz, auf die auch direkt aus den Office-Paketen
+              <a href="https://www.openoffice.org/de/" target="_blank" rel="noopener">OpenOffice</a>/<a href="https://de.libreoffice.org/" target="_blank" rel="noopener">LibreOffice</a>
+              zugegriffen werden kann. Dies macht das Gesamtpaket sehr offen und flexibel.
+              Alternativ kann auch
+              <a href="https://www.mysql.com/de/" target="_blank" rel="noopener">MySQL</a>
+              verwendet werden.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Technisches</h2>
+            <p>
+              Die Implementierung erfolgt mit
+              <a href="https://adoptium.net/de/" target="_blank" rel="noopener">Java</a>.
+              Dadurch ist OpenJVerein auf vielen Plattformen lauffähig.
+              Als GUI-Framework kommt
+              <a href="https://www.willuhn.de/products/jameica/" target="_blank" rel="noopener">Jameica</a>
+              zum Einsatz.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Vorteile</h2>
+            <ul>
+              <li>Portabel: läuft auf Windows, Linux und macOS</li>
+              <li>Kostenlos: Open Source</li>
+              <li>Banking: Anbindung an Hibiscus</li>
+              <li>Flexibel: benutzerdefinierte Eigenschaften und Datenfelder</li>
+              <li>Offen: Datenbank H2 oder MySQL</li>
+              <li>Community: Hilfe über großes, aktives Forum</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr>
+      </div>
+
+    </main>
+    <script>
+      var screenshots = [];
+      var currentScreenshot = 0;
+
+      $('.screenshot-link').each(function () {
+        screenshots.push({
+          image: $(this).data('image'),
+          title: $(this).data('title')
+        });
+      });
+
+      function showScreenshot(index) {
+        if (index < 0) {
+          index = screenshots.length - 1;
+        }
+
+        if (index >= screenshots.length) {
+          index = 0;
+        }
+
+        currentScreenshot = index;
+
+        $('#screenshotModalLabel').text(screenshots[index].title);
+
+        $('#screenshotModalImage')
+          .attr('src', screenshots[index].image)
+          .attr('alt', screenshots[index].title);
+      }
+
+      $('#screenshotModal').on('show.bs.modal', function (event) {
+        var clicked = $(event.relatedTarget);
+        var image = clicked.data('image');
+
+        currentScreenshot = screenshots.findIndex(function (screenshot) {
+          return screenshot.image === image;
+        });
+
+        showScreenshot(currentScreenshot);
+      });
+
+      $('#screenshotPrev').on('click', function () {
+        showScreenshot(currentScreenshot - 1);
+      });
+
+      $('#screenshotNext').on('click', function () {
+        showScreenshot(currentScreenshot + 1);
+      });
+
+      $('#screenshotModal').on('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+          showScreenshot(currentScreenshot - 1);
+        }
+
+        if (event.key === 'ArrowRight') {
+          showScreenshot(currentScreenshot + 1);
+        }
+      });
+    </script>
+
+  </body>
+</html>
+
